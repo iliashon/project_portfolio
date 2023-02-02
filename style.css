@@ -12,6 +12,9 @@ ul {
 a {
     text-decoration: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 /* /tegs */
 .header__bag-color {
     width: 100%;
@@ -166,4 +169,11 @@ a {
 #send-message:hover {
     background-color: #828282;
     font-size: 100%;
+}
+.scroll-up {
+    position: fixed;
+    right: 125px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
 }
