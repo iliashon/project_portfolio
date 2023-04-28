@@ -36,4 +36,13 @@ body {
     right: 0;
     top: 0;
     height: 100%;
+    transition: 0.8s;
+}
+
+#my-photo-left {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    height: 100%;
+    transition: 0.8s;
 }
