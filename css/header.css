@@ -1,0 +1,50 @@
+/* import font-family */
+@font-face {
+    font-family: "NicoMoji-Regular";
+    src: url("/assets/fonts/NicoMoji-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* header */
+.header {
+    position: absolute;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    z-index: 1;
+}
+/* logo */
+#logo {
+    font-family: "NicoMoji-Regular";
+    font-size: 2em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo a {
+    color: #fff;
+}
+
+#logo__job {
+    font-size: 0.5em;
+}
+
+/* nav bar */
+#nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav__link {
+    color: #fff;
+    font-family: "NicoMoji-Regular";
+}
+
+.nav__link_active {
+    border-bottom: 2px #fff solid;
+}
+
