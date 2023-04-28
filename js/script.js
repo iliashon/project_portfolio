@@ -1,1 +1,7 @@
-console.log('hello')
+import switchingPage from "./modules/page-switching"
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    switchingPage();
+
+})

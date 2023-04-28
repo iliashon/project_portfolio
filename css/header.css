@@ -42,9 +42,60 @@
 .nav__link {
     color: #fff;
     font-family: "NicoMoji-Regular";
+    direction: 0.3s;
 }
 
-.nav__link_active {
+/* Hover solid link */
+.nav__link-solid a {
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav__link-solid a:after {
+    background-color: #fff;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    transition: width .3s ease-in-out;
+}
+
+.nav__link-solid a:hover:after {
+    width: 100%;
+}
+
+.nav__link_active a:after {
+    background-color: #fff;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 100%;
+    transition: width .3s ease-in-out;
+}
+
+/* burger nav */
+#burger-nav {
+    display: none;
+}
+#burger-nav span{
+    display: block;
     border-bottom: 2px #fff solid;
+    width: 30px;
 }
 
+/* media 1000px */
+@media (max-width: 1000px){
+
+    #nav {
+        display: none;
+    }
+
+    #burger-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+}

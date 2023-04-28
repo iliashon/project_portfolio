@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css2?family=PT+Mono&display=swap);
+
+#home {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    z-index: 1;
+    width: 50%;
+}
+
+#home__live-code {
+    background: #1F1E1E;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10% 0;
+}
+
+#home__title,
+#home__title-next {
+    font-family: 'PT Mono', monospace;
+    line-height: 2em;
+}
+
+#home__title-next::after {
+    content: url(../assets/svg/Circled\ Up\ Left.svg);
+    cursor: pointer;
+    position: absolute;
+    bottom: -15px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+#home__title-next:hover:after {
+    transform: rotate(45deg);
+}
+
+/* media 1000px */
+@media (max-width: 1000px){
+
+
+
+}

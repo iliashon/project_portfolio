@@ -14,19 +14,67 @@
             <a href="#" id="logo__job">Front-end developer</a>
         </div>
         <nav id="nav">
-            <a href="#" class="nav__link home nav__link_active">Home</a>
-            <a href="#" class="nav__link about">About me</a>
-            <a href="#" class="nav__link portfolio">Portfolio</a>
-            <a href="#" class="nav__link skills">Skills</a>
-            <a href="#" class="nav__link contact">Contacts</a>
+            <div class="nav__link-solid nav__link_active">
+                <a href="#" class="nav__link home">Home</a>
+            </div>
+            <div class="nav__link-solid">
+                <a href="#" class="nav__link about">About me</a>
+            </div>
+            <div class="nav__link-solid">
+                <a href="#" class="nav__link portfolio">Portfolio</a>
+            </div>
+            <div class="nav__link-solid">
+                <a href="#" class="nav__link skills">Skills</a>
+            </div>
+            <div class="nav__link-solid">
+                <a href="#" class="nav__link contact">Contacts</a>
+            </div>
         </nav>
+        <div id="burger-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+            <nav id="nav">
+                <div class="nav__link-solid nav__link_active">
+                    <a href="#" class="nav__link home">Home</a>
+                </div>
+                <div class="nav__link-solid">
+                    <a href="#" class="nav__link about">About me</a>
+                </div>
+                <div class="nav__link-solid">
+                    <a href="#" class="nav__link portfolio">Portfolio</a>
+                </div>
+                <div class="nav__link-solid">
+                    <a href="#" class="nav__link skills">Skills</a>
+                </div>
+                <div class="nav__link-solid">
+                    <a href="#" class="nav__link contact">Contacts</a>
+                </div>
+            </nav>
+        </div>
     </header>
     <main class="container">
+        <div id="home">
+            <h1 id="home__title">Inspiration in every line of code</h1>
+            <div id="home__live-code">
+                <p id="home__live-code__text">request.addEventListener('load', () => {<br>
+                    if (request.status === 200){<br>
+                        console.log(request.response);<br>
+                        statusMassage.textContent = successfullyBlock(sending, done, cross, registr);<br>  
+                        form.reset();<br>
+                        setTimeout(() => {<br>
+                        statusMassage.remove();<br>
+                        }, 2000);<br>
+                    }<br>
+                });
+                </p>
+            </div>
+            <h2 id="home__title-next">I see you are late, find out more about me</h2>
+        </div>
 
-
-
-        <img id="my-photo" src="./assets/img/my-photo.png" alt="/">
+        <img id="my-photo" src="./assets/img/my-photo.png" alt="#">
     </main>
+
     <script src="./js/bundle.js"></script>
 </body>
 </html>
