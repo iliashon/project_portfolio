@@ -1,5 +1,6 @@
 @import url(./css/header.css);
 @import url(./css/home-main.css);
+@import url(./css/about-main.css);
 
 /* reset css */
 * {
@@ -33,7 +34,7 @@ body {
 
 #my-photo {
     position: fixed;
-    right: 0;
+    right: -300px;
     top: 0;
     height: 100%;
     transition: 0.8s;
@@ -41,7 +42,7 @@ body {
 
 #my-photo-left {
     position: fixed;
-    left: -300px;
+    left: 0px;
     top: 0;
     height: 100%;
     transition: 0.8s;

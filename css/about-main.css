@@ -1,0 +1,25 @@
+#about {
+    position: absolute;
+    width: 60%;
+    left: 30%;
+    font-family: 'PT Mono', monospace;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+}
+.about__university,
+.about__plane,
+.about__result {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+.about__business,
+.about__code {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
