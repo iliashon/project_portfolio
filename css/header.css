@@ -9,11 +9,11 @@
 .header {
     position: absolute;
     color: #fff;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 95%;
+    width: 100%;
     z-index: 1;
 }
 /* logo */
@@ -23,6 +23,7 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    margin: 10px 0 0 15px;
 }
 
 #logo a {
@@ -37,6 +38,7 @@
 #nav {
     display: flex;
     gap: 30px;
+    margin-right: 15px;
 }
 
 .nav__link {
@@ -78,6 +80,7 @@
 /* burger nav */
 #burger-nav {
     display: none;
+    margin-right: 15px;
 }
 #burger-nav span{
     display: block;
