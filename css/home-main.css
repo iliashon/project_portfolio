@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=PT+Mono&display=swap);
 
 #home {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 25%;
     left: 15%;
@@ -26,7 +26,7 @@
 }
 
 #home__title-next::after {
-    content: url(../assets/svg/Circled\ Up\ Left.svg);
+    content: url(../assets/svg/CircledUpLeft.svg);
     cursor: pointer;
     position: absolute;
     bottom: -15px;

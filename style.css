@@ -1,6 +1,9 @@
 @import url(./css/header.css);
 @import url(./css/home-main.css);
 @import url(./css/about-main.css);
+@import url(./css/contacts-main.css);
+@import url(./css/portfolio-main.css);
+@import url(./css/skills-main.css);
 
 /* reset css */
 * {
@@ -34,7 +37,7 @@ body {
 
 #my-photo {
     position: fixed;
-    right: -300px;
+    right: 0;
     top: 0;
     height: 100%;
     transition: 0.8s;
@@ -42,8 +45,52 @@ body {
 
 #my-photo-left {
     position: fixed;
-    left: 0px;
+    left: -300px;
     top: 0;
     height: 100%;
     transition: 0.8s;
 }
+
+
+
+/* .animation-left {
+    animation: deleteLeft 2s;
+}
+.animation-right {
+    animation: deleteRight 2s;
+}
+.add-up {
+    animation: addUp 2s;
+}
+.add-left {
+    animation: addLeft 2s;
+}
+.animation-down {
+    animation: deleteDown 2s;
+}
+
+@keyframes deleteLeft {
+    100%{
+        left: -50%;
+    }
+}
+@keyframes deleteRight {
+    100%{
+        right: -50%;
+    }
+}
+@keyframes addUp {
+    100%{
+        top: 50%;
+    }
+}
+@keyframes deleteDown {
+    100%{
+        top: 150%;
+    }
+}
+@keyframes addLeft {
+    100%{
+        left: 0%;
+    }
+} */

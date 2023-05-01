@@ -1,11 +1,13 @@
 #about {
+    display: block;
     position: absolute;
     width: 60%;
     left: 30%;
     font-family: 'PT Mono', monospace;
-    top: 50%;
+    top: -100%;
     left: 50%;
     transform: translate(-40%, -50%);
+    transition: 0.5s;
 }
 .about__university,
 .about__plane,
