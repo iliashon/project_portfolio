@@ -16,10 +16,12 @@
 }
 #skills-container {
     list-style-type: none;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    grid-gap: 40px;
+    grid-gap: 50px;
+    display: flex;
+    max-width: 700px;
+    overflow: scroll;
+    height: 200px;
 }
 .skill-st {
     justify-self: flex-start;
