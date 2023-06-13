@@ -25,3 +25,13 @@
     gap: 30px;
     margin-top: 10px;
 }
+
+@media (max-width: 900px){
+    #about {
+        left: 40%;
+        max-height: 70vh;
+        overflow: scroll;
+        width: 90%;
+        margin-top: 3em;
+    }
+}
