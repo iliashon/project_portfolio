@@ -89,7 +89,8 @@
     width: 30px;
 }
 #nav__burger__block {
-    background-color: #000;
+    background-color: #989898;
+    box-shadow: -10px 0px 60px #989898;
     height: 100vh;
     position: fixed;
     right: -120%;
