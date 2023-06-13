@@ -17,7 +17,7 @@ function animateSwitching(attribute) {
       photoRight.style.right = "0px";
     }
     if (section.classList.contains("info_active")) {
-      section.style.top = "-100%";
+      section.style.top = "-150%";
       section.classList.remove("info_active");
     }
   });

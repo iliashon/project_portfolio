@@ -4,7 +4,7 @@
     width: 60%;
     left: 30%;
     font-family: 'PT Mono', monospace;
-    top: -100%;
+    top: -150%;
     left: 50%;
     transform: translate(-40%, -50%);
     transition: 0.5s;
@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     gap: 30px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .about__business,
 .about__code {
@@ -23,5 +23,5 @@
     flex-direction: row-reverse;
     align-items: center;
     gap: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
