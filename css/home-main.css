@@ -44,7 +44,27 @@
 
 /* media 1000px */
 @media (max-width: 1000px){
-
-
-
+    #home {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 80%;
+        transition: 0.8s;
+        margin-top: 2em;
+    }
+    #home__title,
+    #home__title-next {
+    font-size: 1em;
+    }
+    #home__title-next::after {
+        content: '';
+        background: url(../assets/svg/CircledUpLeft.svg) no-repeat;
+        background-size: 30px;
+        width: 30px;
+        height: 30px;
+        bottom: 0;
+        transition: 0.3s;
+    }
 }
