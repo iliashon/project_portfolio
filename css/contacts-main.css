@@ -1,5 +1,4 @@
 #contacts {
-    /* display: none; */
     position: absolute;
     top: -100%;
     left: 50%;
@@ -8,3 +7,55 @@
     width: 50%;
     transition: 0.8s;
 }
+
+#contacts__title {
+    font-family: 'PT Mono', monospace;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+#contacts__number {
+    font-family: 'PT Mono', monospace;
+    line-height: 2em;
+    font-size: 4em;
+    color: #fff;
+    max-width: 500px;
+    transition: 0.5s;
+}
+
+#contacts__info {
+    display: flex;
+    flex-direction: column;
+}
+
+#contacts__email {
+    font-family: 'PT Mono', monospace;
+    line-height: 2em;
+    font-size: 1.5em;
+    color: #fff;
+    max-width: 300px;
+    transition: 0.5s;
+}
+
+#contacts__icons {
+    display: flex;
+    gap: 3em;
+    margin-top: 3em;
+    height: 2em;
+}
+
+#contacts__icons img {
+    width: 4em;
+    transition: 0.5s;
+}
+
+#contacts__number:hover,
+#contacts__email:hover{
+    margin-left: 0.5em;
+    color: #c6c6c6;
+}
+
+#contacts__icons img:hover {
+    padding-top: 1em;
+}
+

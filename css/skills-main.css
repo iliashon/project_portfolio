@@ -19,9 +19,9 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     display: flex;
-    max-width: 700px;
+    max-width: 900px;
     overflow: scroll;
-    height: 200px;
+    height: 300px;
 }
 .skill-st {
     justify-self: flex-start;
@@ -33,12 +33,18 @@
     cursor: pointer;
 }
 
+.skill img,
+.skill-st img {
+    width: 200px;
+    height: 200px;
+}
+
 .img-title {
     color: #fff;
     width: 150px;
     height: 0px;
     position: absolute;
-    right: -25px;
+    right: 20px;
     border-radius: 10px;
     opacity: 0.9;
     overflow: hidden;
@@ -96,5 +102,4 @@
         background-color: #81D4FA;
         height: 40px;
     }
-       
 }
