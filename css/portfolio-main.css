@@ -14,42 +14,80 @@
     cursor: pointer;
     font-size: 1.5em;
 }
-.slider {
+
+.portfolio__block {
+    width: 90%;
+    height: 65vh;
+    border-radius: 4px;
+    background: #212121;
     display: flex;
-    position: relative;
-}
-.slick-track {
-    display: flex;
-}
-.slick-list {
-    overflow: hidden;
-}
-.slider .slick-arrow {
-    position: absolute;
-    top: 100%;
-    z-index: 10;
-    font-size: 0;
-    width: 50px;
-    cursor: pointer;
-    border: 0;
-    height: 50px;
-}
-.slider .slick-arrow.slick-prev {
-    left: 2%;
-    background: url(../assets/svg/CircledUpLeft.svg) 0 0 / 100% no-repeat;
-    transform: rotate(-135deg);
-}
-.slider .slick-arrow.slick-next {
-    right: 2%;
-    background: url(../assets/svg/CircledUpLeft.svg) 0 0 / 100% no-repeat;
-    transform: rotate(45deg);
-}
-.slider img {
-    width: 100%;
+    gap: 5px;
+    padding: .4em;
+  }
+  
+  .portfolio__block p {
     height: 100%;
-    border-radius: 20px;
-    object-fit: cover;
-}
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .8s;
+    background: #212121;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  .portfolio__block p:hover {
+    flex: 30;
+  }
+
+  #english__img {
+    background: url(../assets/img/english.png) 0 0 no-repeat;
+    background-size:cover;
+  }
+  #shelter__img {
+    background: url(../assets/img/shelter.png) 0 0 no-repeat;
+    background-size:cover;
+  }
+  #food__img {
+    background: url(../assets/img/menu-up.png) 0 0 no-repeat;
+    background-size:cover;
+  }
+  #keyboard__img {
+    background: url(../assets/img/keyboard.png) 0 0 no-repeat;
+    background-size:cover;
+  }
+  
+  .portfolio__block p span {
+    font-family: 'PT Mono', monospace;
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: .1em;
+  }
+
+  .portfolio__block p span a {
+    color: #000;
+    transition: 0.5s;
+  }
+
+  @media (hover:hover) {
+    .portfolio__block p span a:hover {
+        font-size: 2em;
+      }
+  }
+  
+  .portfolio__block p:hover span {
+    transform: rotate(0);
+  }
 
 @media (max-width: 1000px){
+
 }
