@@ -19,8 +19,8 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     display: flex;
+    flex-wrap: wrap;
     max-width: 900px;
-    overflow: scroll;
     height: 300px;
 }
 .skill-st {
@@ -35,16 +35,16 @@
 
 .skill img,
 .skill-st img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 }
 
 .img-title {
     color: #fff;
-    width: 150px;
+    width: 100px;
     height: 0px;
     position: absolute;
-    right: 20px;
+    right: 0;
     border-radius: 10px;
     opacity: 0.9;
     overflow: hidden;
@@ -56,50 +56,64 @@
 
     .github:hover .github-info {
         background-color: #455A64;
-        height: 40px;
+        height: 20px;
     }
     .sass:hover .sass-info {
         background-color: #F06292;
-        height: 40px;
+        height: 20px;
     }
     .javascript:hover .js-info {
         background-color: #FFD600;
-        height: 40px;
+        height: 20px;
     }
     .css:hover .css-info {
         background-color: #0277BD;
-        height: 40px;
+        height: 20px;
     }
     .html:hover .html-info {
         background-color: #FF6D00;
-        height: 40px;
+        height: 20px;
     }
     .figma:hover .figma-info {
         background-color: #66BB6A;
-        height: 40px;
+        height: 20px;
     }
     .vs-code:hover .vs-info {
         background-color: #29B6F6;
-        height: 40px;
+        height: 20px;
     }
     .bootstrap:hover .bootstrap-info {
         background-color: #673AB7;
-        height: 40px;
+        height: 20px;
     }
     .react:hover .react-info {
         background-color: #80DEEA;
-        height: 40px;
+        height: 20px;
     }
     .git:hover .git-info {
         background-color: #F4511E;
-        height: 40px;
+        height: 20px;
     }
     .docker:hover .docker-info {
         background-color: #0288D1;
-        height: 40px;
+        height: 20px;
     }
     .webpack:hover .webpack-info {
         background-color: #81D4FA;
-        height: 40px;
+        height: 20px;
     }
 }
+
+@media (max-width: 1000px){
+    #skills {
+        margin-top: 3em;
+        height: 75vh;
+        width: 80%;
+        left: 50%;
+    }
+    #skills-container {
+        overflow: scroll;
+        height: 60vh;
+    }
+}
+
