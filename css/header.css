@@ -1,7 +1,7 @@
 /* import font-family */
 @font-face {
     font-family: "NicoMoji-Regular";
-    src: url("/assets/fonts/NicoMoji-Regular.ttf") format("truetype");
+    src: url("../assets/fonts/NicoMoji-Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
