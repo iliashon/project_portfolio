@@ -41,6 +41,7 @@ body {
     top: 0;
     height: 100%;
     transition: 0.8s;
+    z-index: 1;
 }
 
 #my-photo-left {
@@ -49,4 +50,5 @@ body {
     top: 0;
     height: 100%;
     transition: 0.8s;
+    z-index: 1;
 }

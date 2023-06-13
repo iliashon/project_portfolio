@@ -1,6 +1,9 @@
 const nav = document.querySelector("#nav"),
   linkSolid = nav.querySelectorAll(".nav__link-solid"),
   link = nav.querySelectorAll(".nav__link"),
+  navBurger = document.querySelector("#nav__burger__block"),
+  linkSolidBurger = navBurger.querySelectorAll(".nav__link-solid"),
+  linkBurger = navBurger.querySelectorAll(".nav__link"),
   sectionMain = document.querySelectorAll(".info-block"),
   photoRight = document.querySelector("#my-photo"),
   photoLeft = document.querySelector("#my-photo-left"),
@@ -62,6 +65,17 @@ function switchingPage() {
   link.forEach((tabLink) => {
     tabLink.addEventListener("click", (clickLink) => {
       linkSolid.forEach((activeLink) => {
+        if (activeLink.classList.contains("nav__link_active")) {
+          activeLink.classList.remove("nav__link_active");
+        }
+      });
+      animateSwitching(clickLink.target.getAttribute("data-name"));
+      clickLink.target.parentNode.classList.add("nav__link_active");
+    });
+  });
+  linkBurger.forEach((tabLink) => {
+    tabLink.addEventListener("click", (clickLink) => {
+      linkSolidBurger.forEach((activeLink) => {
         if (activeLink.classList.contains("nav__link_active")) {
           activeLink.classList.remove("nav__link_active");
         }

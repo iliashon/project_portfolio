@@ -1,5 +1,33 @@
 /******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./js/modules/burger.js":
+/*!******************************!*\
+  !*** ./js/modules/burger.js ***!
+  \******************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "spanRotate": function() { return /* binding */ spanRotate; }
+/* harmony export */ });
+const burgerNav = document.querySelector('#burger-nav'),
+  span = burgerNav.querySelector('.span__nav'),
+  burgerNavMenu = burgerNav.querySelector('#nav__burger__block');
+function spanRotate() {
+  span.addEventListener('click', () => {
+    if (span.classList.contains("span__nav_active")) {
+      span.classList.remove("span__nav_active");
+      burgerNavMenu.style.right = '-100%';
+    } else {
+      span.classList.add("span__nav_active");
+      burgerNavMenu.style.right = '0';
+    }
+  });
+}
+
+/***/ }),
 
 /***/ "./js/modules/page-switching.js":
 /*!**************************************!*\
@@ -7,11 +35,13 @@
   \**************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 const nav = document.querySelector("#nav"),
   linkSolid = nav.querySelectorAll(".nav__link-solid"),
   link = nav.querySelectorAll(".nav__link"),
+  navBurger = document.querySelector("#nav__burger__block"),
+  linkSolidBurger = navBurger.querySelectorAll(".nav__link-solid"),
+  linkBurger = navBurger.querySelectorAll(".nav__link"),
   sectionMain = document.querySelectorAll(".info-block"),
   photoRight = document.querySelector("#my-photo"),
   photoLeft = document.querySelector("#my-photo-left"),
@@ -77,18 +107,19 @@ function switchingPage() {
       clickLink.target.parentNode.classList.add("nav__link_active");
     });
   });
+  linkBurger.forEach(tabLink => {
+    tabLink.addEventListener("click", clickLink => {
+      linkSolidBurger.forEach(activeLink => {
+        if (activeLink.classList.contains("nav__link_active")) {
+          activeLink.classList.remove("nav__link_active");
+        }
+      });
+      animateSwitching(clickLink.target.getAttribute("data-name"));
+      clickLink.target.parentNode.classList.add("nav__link_active");
+    });
+  });
 }
 /* harmony default export */ __webpack_exports__["default"] = (switchingPage);
-
-/***/ }),
-
-/***/ "./js/modules/slider.js":
-/*!******************************!*\
-  !*** ./js/modules/slider.js ***!
-  \******************************/
-/***/ (function() {
-
-
 
 /***/ })
 
@@ -119,18 +150,6 @@ function switchingPage() {
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	!function() {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = function(module) {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				function() { return module['default']; } :
-/******/ 				function() { return module; };
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	}();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	!function() {
 /******/ 		// define getter functions for harmony exports
@@ -161,20 +180,19 @@ function switchingPage() {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 !function() {
-"use strict";
 /*!**********************!*\
   !*** ./js/script.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_page_switching__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/page-switching */ "./js/modules/page-switching.js");
-/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/slider */ "./js/modules/slider.js");
-/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_slider__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/burger */ "./js/modules/burger.js");
+/* harmony import */ var _modules_page_switching__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/page-switching */ "./js/modules/page-switching.js");
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  (0,_modules_page_switching__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  (0,_modules_page_switching__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  (0,_modules_burger__WEBPACK_IMPORTED_MODULE_0__.spanRotate)();
 });
 }();
 /******/ })()

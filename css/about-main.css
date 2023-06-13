@@ -8,6 +8,7 @@
     left: 50%;
     transform: translate(-40%, -50%);
     transition: 0.5s;
+    z-index: 2;
 }
 .about__university,
 .about__plane,
