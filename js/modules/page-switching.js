@@ -3,7 +3,8 @@ const nav = document.querySelector("#nav"),
   link = nav.querySelectorAll(".nav__link"),
   sectionMain = document.querySelectorAll(".info-block"),
   photoRight = document.querySelector("#my-photo"),
-  photoLeft = document.querySelector("#my-photo-left");
+  photoLeft = document.querySelector("#my-photo-left"),
+  homeTitle = document.querySelector("#home__title-next");
 
 function animateSwitching(attribute) {
   sectionMain.forEach((section) => {
@@ -28,6 +29,20 @@ function animateSwitching(attribute) {
 }
 
 function switchingPage() {
+  homeTitle.addEventListener("click", (clickLink) => {
+    linkSolid.forEach((activeLink) => {
+      if (activeLink.classList.contains("nav__link_active")) {
+        activeLink.classList.remove("nav__link_active");
+      }
+    });
+    animateSwitching(clickLink.target.getAttribute("data-name"));
+    link.forEach((tabLink) => {
+      if (tabLink.getAttribute("data-name") === 'about') {
+        tabLink.parentNode.classList.add("nav__link_active");
+      }
+    })
+  });
+
   link.forEach((tabLink) => {
     tabLink.addEventListener("click", (clickLink) => {
       linkSolid.forEach((activeLink) => {
