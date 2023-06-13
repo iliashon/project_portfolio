@@ -5,29 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <title>Tupalski Ilya</title>
 </head>
 <body>
     <header class="header">
         <div id="logo" data-name="home" class="nav__link">
-            <a href="#" id="logo__full-name">Tupalski Ilya</a>
-            <a href="#" id="logo__job">Front-end developer</a>
+            <h2 href="#" id="logo__full-name">Tupalski Ilya</h2>
+            <h2 href="#" id="logo__job">Front-end developer</h2>
         </div>
         <nav id="nav">
             <div class="nav__link-solid nav__link_active">
-                <a href="#" data-name="home" class="nav__link">Home</a>
+                <h3 href="#" data-name="home" class="nav__link">Home</h3>
             </div>
             <div class="nav__link-solid">
-                <a href="#" data-name="about" class="nav__link">About me</a>
+                <h3 href="#" data-name="about" class="nav__link">About me</h3>
             </div>
             <div class="nav__link-solid">
-                <a href="#" data-name="portfolio" class="nav__link">Portfolio</a>
+                <h3 href="#" data-name="portfolio" class="nav__link">Portfolio</h3>
             </div>
             <div class="nav__link-solid">
-                <a href="#" data-name="skills" class="nav__link">Skills</a>
+                <h3 href="#" data-name="skills" class="nav__link">Skills</h3>
             </div>
             <div class="nav__link-solid">
-                <a href="#" data-name="contacts" class="nav__link">Contacts</a>
+                <h3 href="#" data-name="contacts" class="nav__link">Contacts</h3>
             </div>
         </nav>
         <div id="burger-nav">
@@ -96,21 +98,24 @@
                 </div>
             </section>
             <section class="info-block ph-r" id="portfolio">
-                <h1 id="home__title">Portfolio</h1>
-                <div id="home__live-code">
-                    <p id="home__live-code__text">request.addEventListener('load', () => {<br>
-                        if (request.status === 200){<br>
-                            console.log(request.response);<br>
-                            statusMassage.textContent = successfullyBlock(sending, done, cross, registr);<br>  
-                            form.reset();<br>
-                            setTimeout(() => {<br>
-                            statusMassage.remove();<br>
-                            }, 2000);<br>
-                        }<br>
-                    });
-                    </p>
+                <h1 id="portfolio__title">Portfolio</h1>
+                <div class="slider">
+                    <div class="block__slide">
+                        <img src="https://img.freepik.com/free-photo/html-and-css-collage-concept_23-2150061955.jpg?size=626&ext=jpg" alt="">
+                    </div>
+                    <div class="block__slide">
+                        <img src="https://img.freepik.com/premium-photo/desktop-source-code-and-wallpaper-by-computer-language-with-coding-and-programming_33771-595.jpg?size=626&ext=jpg" alt="">
+                    </div>
+                    <div class="block__slide">
+                        <img src="https://img.freepik.com/free-photo/html-and-css-collage-concept-with-person_23-2150062008.jpg?size=626&ext=jpg" alt="">
+                    </div>
+                    <div class="block__slide">
+                        <img src="https://img.freepik.com/premium-photo/web-development-programming-code-or-app-development-and-web-design-on-computer-for-seo-3d-background_125322-458.jpg?size=626&ext=jpg" alt="">
+                    </div>
+                    <div class="block__slide">
+                        <img src="https://img.freepik.com/free-photo/person-in-front-of-computer-working-html_23-2150040428.jpg?size=626&ext=jpg&ga=GA1.2.457330847.1686643682&semt=sph" alt="">
+                    </div>
                 </div>
-                <h2 id="home__title-next">I see you are late, find out more about me</h2>
             </section>
             <section class="info-block ph-l" id="skills">
                 <h1 id="skills-title">Skills</h1>
@@ -184,6 +189,9 @@
         <img id="my-photo" src="./assets/img/my-photo.png" alt="#">
     </main>
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
     <script src="./js/bundle.js"></script>
 </body>
 </html>

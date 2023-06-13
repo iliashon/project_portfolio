@@ -26,6 +26,7 @@
     font-family: 'PT Mono', monospace;
     line-height: 2em;
     cursor: pointer;
+    font-size: 1.5em;
 }
 
 #home__title-next::after {

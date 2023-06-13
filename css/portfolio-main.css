@@ -2,9 +2,56 @@
     /* display: none; */
     position: absolute;
     top: -100%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    width: 50%;
+    width: 75%;
     transition: 0.8s;
+}
+#portfolio__title {
+    font-family: 'PT Mono', monospace;
+    line-height: 2em;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+.slider {
+    background: #1F1E1E;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+}
+.slick-track {
+    display: flex;
+}
+.slick-list {
+    overflow: hidden;
+}
+.slider {
+    position: relative;
+}
+.slider .slick-arrow {
+    position: absolute;
+    top: calc(50% - 25px);
+    z-index: 10;
+    font-size: 0;
+    width: 50px;
+    cursor: pointer;
+    border: 0;
+    height: 50px;
+}
+.slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url(../assets/svg/CircledUpLeft.svg) 0 0 / 100% no-repeat;
+    transform: rotate(-135deg);
+}
+.slider .slick-arrow.slick-next {
+    right: 0;
+    background: url(../assets/svg/CircledUpLeft.svg) 0 0 / 100% no-repeat;
+    transform: rotate(45deg);
+}
+.slider img {
+    width: 100%;
 }

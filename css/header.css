@@ -19,19 +19,19 @@
 /* logo */
 #logo {
     font-family: "NicoMoji-Regular";
-    font-size: 2em;
+    font-size: 1.5em;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     margin: 10px 0 0 15px;
 }
 
-#logo a {
+#logo h2 {
     color: #fff;
 }
 
 #logo__job {
-    font-size: 0.5em;
+    font-size: 0.7em;
 }
 
 /* nav bar */
@@ -45,17 +45,18 @@
     color: #fff;
     font-family: "NicoMoji-Regular";
     direction: 0.3s;
+    font-size: 1em;
 }
 
 /* Hover solid link */
-.nav__link-solid a {
+.nav__link-solid h3 {
     display: inline-block;
     line-height: 1;
     text-decoration: none;
     cursor: pointer;
 }
 
-.nav__link-solid a:after {
+.nav__link-solid h3:after {
     background-color: #fff;
     display: block;
     content: "";
@@ -64,11 +65,11 @@
     transition: width .3s ease-in-out;
 }
 
-.nav__link-solid a:hover:after {
+.nav__link-solid h3:hover:after {
     width: 100%;
 }
 
-.nav__link_active a:after {
+.nav__link_active h3:after {
     background-color: #fff;
     display: block;
     content: "";
