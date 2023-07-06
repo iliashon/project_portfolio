@@ -26,7 +26,7 @@ function animateSwitching(attribute) {
   });
   sectionMain.forEach((section) => {
     if (section.id === attribute) {
-      section.style.top = "50%";
+      section.style.top = "55%";
       section.classList.add("info_active");
     }
   });

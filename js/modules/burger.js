@@ -6,7 +6,7 @@ export function spanRotate() {
   span.addEventListener('click', () => {
     if (span.classList.contains("span__nav_active")) {
       span.classList.remove("span__nav_active");
-      burgerNavMenu.style.right = '-100%';
+      burgerNavMenu.style.right = '-200%';
     } else {
       span.classList.add("span__nav_active");
       burgerNavMenu.style.right = '0';

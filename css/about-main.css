@@ -34,5 +34,6 @@
         overflow: scroll;
         width: 90%;
         margin-top: 3em;
+        font-size: 12px;
     }
 }

@@ -1,182 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Tupalski Ilya</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://img.icons8.com/dotty/80/FFFFFF/guest-male.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css" />
+    <title>IT</title>
+  </head>
+  <body>
     <header class="header">
-        <div id="logo" data-name="home" class="nav__link">
-            <h2 href="#" id="logo__full-name">Tupalski Ilya</h2>
-            <h2 href="#" id="logo__job">Front-end developer</h2>
+      <div id="logo" data-name="home" class="nav__link">
+        <h2 href="#" id="logo__full-name">Tupalski Ilya</h2>
+        <h2 href="#" id="logo__job">Front-end developer</h2>
+      </div>
+      <nav id="nav">
+        <div class="nav__link-solid nav__link_active">
+          <h3 href="#" data-name="home" class="nav__link">Home</h3>
         </div>
-        <nav id="nav">
-            <div class="nav__link-solid nav__link_active">
-                <h3 href="#" data-name="home" class="nav__link">Home</h3>
-            </div>
-            <div class="nav__link-solid">
-                <h3 href="#" data-name="about" class="nav__link">About me</h3>
-            </div>
-            <div class="nav__link-solid">
-                <h3 href="#" data-name="portfolio" class="nav__link">Portfolio</h3>
-            </div>
-            <div class="nav__link-solid">
-                <h3 href="#" data-name="skills" class="nav__link">Skills</h3>
-            </div>
-            <div class="nav__link-solid">
-                <h3 href="#" data-name="contacts" class="nav__link">Contacts</h3>
-            </div>
+        <div class="nav__link-solid">
+          <h3 href="#" data-name="about" class="nav__link">About me</h3>
+        </div>
+        <div class="nav__link-solid">
+          <h3 href="#" data-name="portfolio" class="nav__link">Portfolio</h3>
+        </div>
+        <div class="nav__link-solid">
+          <h3 href="#" data-name="skills" class="nav__link">Skills</h3>
+        </div>
+        <div class="nav__link-solid">
+          <h3 href="#" data-name="contacts" class="nav__link">Contacts</h3>
+        </div>
+      </nav>
+      <div id="burger-nav">
+        <div class="span__nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav id="nav__burger__block">
+          <div class="nav__link-solid nav__link_active">
+            <h3 href="#" data-name="home" class="nav__link">Home</h3>
+          </div>
+          <div class="nav__link-solid">
+            <h3 href="#" data-name="about" class="nav__link">About me</h3>
+          </div>
+          <div class="nav__link-solid">
+            <h3 href="#" data-name="portfolio" class="nav__link">Portfolio</h3>
+          </div>
+          <div class="nav__link-solid">
+            <h3 href="#" data-name="skills" class="nav__link">Skills</h3>
+          </div>
+          <div class="nav__link-solid">
+            <h3 href="#" data-name="contacts" class="nav__link">Contacts</h3>
+          </div>
         </nav>
-        <div id="burger-nav">
-            <div class="span__nav">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <nav id="nav__burger__block">
-                <div class="nav__link-solid nav__link_active">
-                    <h3 href="#" data-name="home" class="nav__link">Home</h3>
-                </div>
-                <div class="nav__link-solid">
-                    <h3 href="#" data-name="about" class="nav__link">About me</h3>
-                </div>
-                <div class="nav__link-solid">
-                    <h3 href="#" data-name="portfolio" class="nav__link">Portfolio</h3>
-                </div>
-                <div class="nav__link-solid">
-                    <h3 href="#" data-name="skills" class="nav__link">Skills</h3>
-                </div>
-                <div class="nav__link-solid">
-                    <h3 href="#" data-name="contacts" class="nav__link">Contacts</h3>
-                </div>
-            </nav>
-        </div>
+      </div>
     </header>
     <main class="container">
-        <img id="my-photo-left" src="./assets/img/my-photo-left.png" alt="#">
-        <div class="info-wrapper">
-            <section class="info-block ph-r info_active" id="home">
-                <h1 id="home__title">Inspiration in every line of code</h1>
-                <div id="home__live-code">
-                    <p id="home__live-code__text">request.addEventListener('load', () => {<br>
-                        if (request.status === 200){<br>
-                            console.log(request.response);<br>
-                            statusMassage.textContent = successfullyBlock(sending, done, cross, registr);<br>  
-                            form.reset();<br>
-                            setTimeout(() => {<br>
-                            statusMassage.remove();<br>
-                            }, 2000);<br>
-                        }<br>
-                    });
-                    </p>
-                </div>
-                <h2 id="home__title-next" data-name="about" class="nav__link">I see you are late, find out more about me</h2>
-            </section>
-            <section class="info-block ph-l" id="about">
-                <div class="about__university">
-                    <p>My story began in college, that's where I fell in love with programming, by education I am a numerical control operator</p>
-                    <img src="./assets/svg/University.svg" alt="University">
-                </div>
-                <div class="about__business">
-                    <p>Immediately after I got a base in my profession, I went to work, since I am a person of practice, I quickly got used to it and grew from an operator to a foreman in a year. I conducted interviews, trained new employees and programmed equipment</p>
-                    <img src="./assets/svg/Business.svg" alt="Work">
-                </div>
-                <div class="about__plane">
-                    <p>Everything was great, but in 2022 I had to fly away from my native country, and this is where my confident path in front-end development began</p>
-                    <img src="./assets/svg/Plane.svg" alt="Plane">
-                </div>
-                <div class="about__code">
-                    <p>Deciding on the direction turned out quickly, since I like to work with the visual side, my choice was obvious. I immediately started learning, and every day I continue to receive new knowledge.</p>
-                    <img src="./assets/svg/Code.svg" alt="Code">
-                </div>
-                <div class="about__result">
-                    <p>You can already see the result of my work on my website, as well as go further and see the rest of the work</p>
-                    <img src="./assets/svg/Check-Document.svg" alt="Result">
-                </div>
-            </section>
-            <section class="info-block ph-r" id="portfolio">
-                <h1 id="portfolio__title">Portfolio</h1>
-                <div class="portfolio__block">
-                    <p id="english__img"><span><a href="#">English class</a></span></p>
-                    <p id="shelter__img"><span><a href="#">Shelter shop</a></span></p>
-                    <p id="food__img"><span><a href="#">Food shop</a></span></p>
-                    <p id="keyboard__img"><span><a href="#">keyboard</a></span></p>
-                </div>
-            </section>
-            <section class="info-block ph-l" id="skills">
-                <h1 id="skills-title">Skills</h1>
-                <ul id="skills-container">
-                    <li class="skill github">
-                        <img src="./assets/svg/GitHubS.svg" alt="">
-                        <div class="github-info img-title">GitHub</div>
-                    </li>
-                    <li class="skill sass">
-                        <img src="./assets/svg/Sass.svg" alt="">
-                        <div class="sass-info img-title">SASS</div>
-                    </li>
-                    <li class="skill webpack">
-                        <img src="./assets/svg/Webpack.svg" alt="">
-                        <div class="webpack-info img-title">Webpack</div>
-                    </li>
-                    <li class="skill-st docker">
-                        <img src="./assets/svg/Docker.svg" alt="">
-                        <div class="docker-info img-title">Docker</div>
-                    </li>
-                    <li class="skill-st javascript">
-                        <img src="./assets/svg/JavaScript.svg" alt="">
-                        <div class="js-info img-title">JavaScript</div>
-                    </li>
-                    <li class="skill-st css">
-                        <img src="./assets/svg/CSS3.svg" alt="">
-                        <div class="css-info img-title">CSS</div>
-                    </li>
-                    <li class="skill html">
-                        <img src="./assets/svg/Html.svg" alt="">
-                        <div class="html-info img-title">HTML</div>
-                    </li>
-                    <li class="skill figma">
-                        <img src="./assets/svg/Figma.svg" alt="">
-                        <div class="figma-info img-title">Figma</div>
-                    </li>
-                    <li class="skill git">
-                        <img src="./assets/svg/Git.svg" alt="">
-                        <div class="git-info img-title">Git</div>
-                    </li>
-                    <li class="skill-st vs-code">
-                        <img src="./assets/svg/vs.svg" alt="">
-                        <div class="vs-info img-title">VS Code</div>
-                    </li>
-                    <li class="skill-st bootstrap">
-                        <img src="./assets/svg/Bootstrap.svg" alt="">
-                        <div class="bootstrap-info img-title">Bootstrap</div>
-                    </li>
-                    <li class="skill-st react">
-                        <img src="./assets/svg/React.svg" alt="">
-                        <div class="react-info img-title">React</div>
-                    </li>
-                </ul>
-            </section>
-            <section class="info-block ph-r" id="contacts">
-                <h1 id="contacts__title">Contacts</h1>
-                <div id="contacts__info">
-                    <a href="#" id="contacts__number">+995593645045</a>
-                    <a href="#" id="contacts__email">itupalski@gmail.com</a>
-                    <div id="contacts__icons">
-                    <a href="#" class="icon__item"><img src="./assets/svg/Discord.svg" alt=""></a>
-                    <a href="#" class="icon__item"><img src="./assets/svg/GitHub.svg" alt=""></a>
-                    <a href="#" class="icon__item"><img src="./assets/svg/Instagram.svg" alt=""></a>
-                    <a href="#" class="icon__item"><img src="./assets/svg/LinkedIn.svg" alt=""></a>
-                    <a href="#" class="icon__item"><img src="./assets/svg/Telegram.svg" alt=""></a>
-                    </div>
-                </div>
-            </section>
-        </div>
+      <img id="my-photo-left" src="./assets/img/my-photo-left.png" alt="#" />
+      <div class="info-wrapper">
+        <section class="info-block ph-r info_active" id="home">
+          <h1 id="home__title">Inspiration in every line of code</h1>
+          <div id="home__live-code">
+            <pre><code>request.addEventListener('load', () => {
+  if (request.status === 200){
+    console.log(request.response);
+    statusMassage.textContent = successfullyBlock(sending, done, cross, registr);
+    form.reset();
+    setTimeout(() => {
+      statusMassage.remove();
+    }, 2000);
+  }
+});
+</code></pre>
+            <p id="home__live-code__text"></p>
+          </div>
+          <h2 id="home__title-next" data-name="about" class="nav__link">
+            I see you are late, find out more about me
+          </h2>
+        </section>
+        <section class="info-block ph-l" id="about">
+          <div class="about__university">
+            <p>
+              My story began in college, that's where I fell in love with
+              programming, by education I am a numerical control operator
+            </p>
+            <img src="./assets/svg/University.svg" alt="University" />
+          </div>
+          <div class="about__business">
+            <p>
+              Immediately after I got a base in my profession, I went to work,
+              since I am a person of practice, I quickly got used to it and grew
+              from an operator to a foreman in a year. I conducted interviews,
+              trained new employees and programmed equipment
+            </p>
+            <img src="./assets/svg/Business.svg" alt="Work" />
+          </div>
+          <div class="about__plane">
+            <p>
+              Everything was great, but in 2022 I had to fly away from my native
+              country, and this is where my confident path in front-end
+              development began
+            </p>
+            <img src="./assets/svg/Plane.svg" alt="Plane" />
+          </div>
+          <div class="about__code">
+            <p>
+              Deciding on the direction turned out quickly, since I like to work
+              with the visual side, my choice was obvious. I immediately started
+              learning, and every day I continue to receive new knowledge.
+            </p>
+            <img src="./assets/svg/Code.svg" alt="Code" />
+          </div>
+          <div class="about__result">
+            <p>
+              You can already see the result of my work on my website, as well
+              as go further and see the rest of the work
+            </p>
+            <img src="./assets/svg/Check-Document.svg" alt="Result" />
+          </div>
+        </section>
+        <section class="info-block ph-r" id="portfolio">
+          <h1 id="portfolio__title">Portfolio</h1>
+          <div class="portfolio__block">
+            <p id="english__img">
+              <span><a href="#">English class</a></span>
+            </p>
+            <p id="shelter__img">
+              <span><a href="#">Shelter shop</a></span>
+            </p>
+            <p id="food__img">
+              <span><a href="#">Food shop</a></span>
+            </p>
+            <p id="keyboard__img">
+              <span><a href="#">keyboard</a></span>
+            </p>
+          </div>
+        </section>
+        <section class="info-block ph-l" id="skills">
+          <h1 id="skills-title">Skills</h1>
+          <ul id="skills-container">
+            <li class="skill github">
+              <img src="./assets/svg/GitHubS.svg" alt="" />
+              <div class="github-info img-title">GitHub</div>
+            </li>
+            <li class="skill sass">
+              <img src="./assets/svg/Sass.svg" alt="" />
+              <div class="sass-info img-title">SASS</div>
+            </li>
+            <li class="skill webpack">
+              <img src="./assets/svg/Webpack.svg" alt="" />
+              <div class="webpack-info img-title">Webpack</div>
+            </li>
+            <li class="skill-st docker">
+              <img src="./assets/svg/Docker.svg" alt="" />
+              <div class="docker-info img-title">Docker</div>
+            </li>
+            <li class="skill-st javascript">
+              <img src="./assets/svg/JavaScript.svg" alt="" />
+              <div class="js-info img-title">JavaScript</div>
+            </li>
+            <li class="skill-st css">
+              <img src="./assets/svg/CSS3.svg" alt="" />
+              <div class="css-info img-title">CSS</div>
+            </li>
+            <li class="skill html">
+              <img src="./assets/svg/Html.svg" alt="" />
+              <div class="html-info img-title">HTML</div>
+            </li>
+            <li class="skill figma">
+              <img src="./assets/svg/Figma.svg" alt="" />
+              <div class="figma-info img-title">Figma</div>
+            </li>
+            <li class="skill git">
+              <img src="./assets/svg/Git.svg" alt="" />
+              <div class="git-info img-title">Git</div>
+            </li>
+            <li class="skill-st vs-code">
+              <img src="./assets/svg/vs.svg" alt="" />
+              <div class="vs-info img-title">VS Code</div>
+            </li>
+            <li class="skill-st bootstrap">
+              <img src="./assets/svg/Bootstrap.svg" alt="" />
+              <div class="bootstrap-info img-title">Bootstrap</div>
+            </li>
+            <li class="skill-st react">
+              <img src="./assets/svg/React.svg" alt="" />
+              <div class="react-info img-title">React</div>
+            </li>
+          </ul>
+        </section>
+        <section class="info-block ph-r" id="contacts">
+          <h1 id="contacts__title">Contacts</h1>
+          <div id="contacts__info">
+            <a href="tel:+995593645045" id="contacts__number">+995593645045</a>
+            <a href="mailto:itupalski@gmail.com" id="contacts__email">itupalski@gmail.com</a>
+            <div id="contacts__icons">
+              <a href="https://discordapp.com/users/333151503470690304/ " class="icon__item" target="_blank"
+                ><img src="./assets/svg/Discord.svg" alt=""
+              /></a>
+              <a href="https://github.com/iliashon" class="icon__item" target="_blank"
+                ><img src="./assets/svg/GitHub.svg" alt=""
+              /></a>
+              <a href="https://www.instagram.com/ilia_shon/" class="icon__item" target="_blank"
+                ><img src="./assets/svg/Instagram.svg" alt=""
+              /></a>
+              <a href="https://www.linkedin.com/in/ilya-tupalski/" class="icon__item" target="_blank"
+                ><img src="./assets/svg/LinkedIn.svg" alt=""
+              /></a>
+              <a href="https://t.me/Ilyatupalski" class="icon__item" target="_blank"
+                ><img src="./assets/svg/Telegram.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </section>
+      </div>
 
-        <img id="my-photo" src="./assets/img/my-photo.png" alt="#">
+      <img id="my-photo" src="./assets/img/my-photo.png" alt="#" />
     </main>
     <script src="./js/bundle.js"></script>
-</body>
+  </body>
 </html>
